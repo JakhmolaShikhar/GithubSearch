@@ -4,17 +4,17 @@ import React from 'react';
 const FileBrowser = ({ files}) => {
     
 
-    const getFiles = async(owner, repo) => {
+    const GetFiles = async(owner, repo) => {
         try{
             const res = await fetch(``);
-
+            return res.json();
         }catch(err){
             console.error("Error in fetching file", err);
         }
-        return res.json();
+        
     }
 
-    const downloadFile = async(owner, repo, commits) => {
+    const DownloadFile = async(owner, repo, commits) => {
         try{
             const res = await fetch(``);
         } catch(err){

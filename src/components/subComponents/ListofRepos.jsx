@@ -1,13 +1,21 @@
 import React from 'react';
 
 
-const getRespositories = async(userName) => {
+const GetRespositories = async(userName) => {
     try{
         const res = await fetch(`${API_URL}/users/${userName}/repos`);
+        return res.json();
     } catch(err){
         console.error("Error in fetching", err);
     }
-    return res.json();
+    
+    return(
+        <div>
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+    )
 }
 
-export default getRespositories;
+export default GetRespositories;
