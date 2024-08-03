@@ -1,9 +1,8 @@
-import { useState } from 'react'
 import './App.css';
 import LandingPage from './components/LandingPage';
 import Repository from './components/Repository';
 import GetRespositories from './components/subComponents/ListofRepos';
-import {BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import FileBrowser from './components/FileBrowser';
 
 
