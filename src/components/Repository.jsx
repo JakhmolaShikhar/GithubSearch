@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {Card, CardContent, CardHeader, CardDescription, Image} from 'semantic-ui-react'
 import FileBrowser from './FileBrowser';
-import { Link,useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Repository ({repos}){
 
